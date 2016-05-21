@@ -1,3 +1,10 @@
+DROP TABLE LeaseAgreement;
+DROP TABLE Rental_Properties;
+DROP TABLE Property_Owners;
+DROP TABLE Employees;
+DROP TABLE Branches;
+DROP TABLE Addresses;
+
 CREATE TABLE Addresses(
 	id 			CHAR(15) NOT NULL PRIMARY KEY,
 	street		VARCHAR(15) NOT NULL,
@@ -37,7 +44,7 @@ CREATE TABLE Rental_Properties (
 	addressId 	 CHAR(15),
 	numRooms	 NUMBER(2) NOT NULL,
 	rent 		 NUMERIC(7,2) NOT NULL,
-	status 		 INTEGER NOT NULL,
+	availability INTEGER NOT NULL,
 	availDate	 DATE NOT NULL,
 	supervisorId CHAR(15),
 	FOREIGN KEY (ownerId) REFERENCES Property_Owners(id),
