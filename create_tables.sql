@@ -14,6 +14,7 @@ CREATE TABLE Addresses(
 
 CREATE TABLE Branches (
 	id 			CHAR(15) NOT NULL PRIMARY KEY,
+	name		CHAR(15) NOT NULL,
 	addressId	CHAR(15) ,
 	phone		NUMBER(10) NOT NULL,
 	FOREIGN KEY (addressId) REFERENCES Addresses(id)
@@ -42,6 +43,7 @@ CREATE TABLE Rental_Properties (
 	propertyId	 CHAR(15) NOT NULL PRIMARY KEY,
 	ownerId		 CHAR(15),
 	addressId 	 CHAR(15),
+	branchId char(15),
 	numRooms	 NUMBER(2) NOT NULL,
 	rent 		 NUMERIC(7,2) NOT NULL,
 	availability INTEGER NOT NULL,
@@ -49,7 +51,8 @@ CREATE TABLE Rental_Properties (
 	supervisorId CHAR(15),
 	FOREIGN KEY (ownerId) REFERENCES Property_Owners(id),
 	FOREIGN KEY (addressId) REFERENCES Addresses(id),
-	FOREIGN KEY (supervisorId) REFERENCES Employees(id)
+	FOREIGN KEY (supervisorId) REFERENCES Employees(id),
+	FOREIGN KEY (branchId) REFERENCES Branch(id)
 );
 
 CREATE TABLE LeaseAgreement (

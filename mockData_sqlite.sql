@@ -12,8 +12,8 @@ insert into Addresses Values ('Lnv8gcebfmAsvSH', '495 Pleasant Street', 'Reno', 
 insert into Addresses Values ('9R9aYW6qxQnV6rz', '120 5th Street East', 'Oak Forest', 60452);
 
   --Branch Generation
-  insert into Branches Values('KF5HV5Y6M41OGEZ', 'pg9OfjROWwcdLqO', 0010991300);
-  insert into Branches Values('JEC94IAGKKTA0RQ', 'AfMVWLdQF1mWDTa', 3237048588);
+  insert into Branches Values('KF5HV5Y6M41OGEZ', 'GreenField', 'pg9OfjROWwcdLqO', 0010991300);
+  insert into Branches Values('JEC94IAGKKTA0RQ', 'Irvine Company', 'AfMVWLdQF1mWDTa', 3237048588);
 
   --Employee Generation
   insert into Employees Values('LLPDEBS430J4FB9', 'Mora Grana', 7479128129, 2005-05-22, 'manager', 'KF5HV5Y6M41OGEZ');
@@ -50,12 +50,12 @@ insert into Addresses Values ('9R9aYW6qxQnV6rz', '120 5th Street East', 'Oak For
   insert into Property_Owners Values('LKKNKHR34GMFWXQ', '9R9aYW6qxQnV6rz', 'Marylyn Rusher', 9128586209, 230);
 
   --Rental Property Generation
-  insert into Rental_Properties Values('AFB835O0SEAY0QC', 'LMM35DDMKJJ88W5', 'pg9OfjROWwcdLqO', 3, 267, 0, 2014-03-25, 'ADBF2OWP17PAIFH');
-  insert into Rental_Properties Values('UFUNJQC3DFAKPMF', 'AF59F0B30PE817M', 'AfMVWLdQF1mWDTa', 6, 424, 1, 2006-07-12, '794ETDDAUKGXRNS');
-  insert into Rental_Properties Values('560GHS95ND6XVH0', 'HA9G2MGWXYMU7FE', 'TNGXa7ekStP8Drs', 5, 632, 0, 2011-04-01, 'FCBCM3TA6762M9D');
-  insert into Rental_Properties Values('6HK9LLA5DYNWPVI', 'ZMR2DZ8PVYBEI8B', 'Lnv8gcebfmAsvSH', 4, 365, 1, 2010-08-19, 'MDTPYX4H467GK2Z');
-  insert into Rental_Properties Values('Q4EG9XS0YE5U2HU', 'LKKNKHR34GMFWXQ', '9R9aYW6qxQnV6rz', 1, 883, 0, 2010-01-09, 'PP69MZR11GM81NW');
-  insert into Rental_Properties Values('GL4MYI691UBR7VX', 'LMM35DDMKJJ88W5', 'pg9OfjROWwcdLqO', 2, 641, 1, 2012-08-25, 'BL8E18U050K4ZT1');
+  insert into Rental_Properties Values('AFB835O0SEAY0QC', 'LMM35DDMKJJ88W5', 'pg9OfjROWwcdLqO', 'KF5HV5Y6M41OGEZ', 3, 267, 0, 2014-03-25, 'ADBF2OWP17PAIFH');
+  insert into Rental_Properties Values('UFUNJQC3DFAKPMF', 'AF59F0B30PE817M', 'AfMVWLdQF1mWDTa', 'KF5HV5Y6M41OGEZ', 6, 424, 1, 2006-07-12, '794ETDDAUKGXRNS');
+  insert into Rental_Properties Values('560GHS95ND6XVH0', 'HA9G2MGWXYMU7FE', 'TNGXa7ekStP8Drs', 'KF5HV5Y6M41OGEZ', 5, 632, 0, 2011-04-01, 'FCBCM3TA6762M9D');
+  insert into Rental_Properties Values('6HK9LLA5DYNWPVI', 'ZMR2DZ8PVYBEI8B', 'Lnv8gcebfmAsvSH', 'JEC94IAGKKTA0RQ', 4, 365, 1, 2010-08-19, 'MDTPYX4H467GK2Z');
+  insert into Rental_Properties Values('Q4EG9XS0YE5U2HU', 'LKKNKHR34GMFWXQ', '9R9aYW6qxQnV6rz', 'JEC94IAGKKTA0RQ', 1, 883, 0, 2010-01-09, 'PP69MZR11GM81NW');
+  insert into Rental_Properties Values('GL4MYI691UBR7VX', 'LMM35DDMKJJ88W5', 'pg9OfjROWwcdLqO', 'JEC94IAGKKTA0RQ', 2, 641, 1, 2012-08-25, 'BL8E18U050K4ZT1');
 
   --Lease Agreement Generation
   insert into LeaseAgreement Values('U87IY65AXFAM69O', 'AFB835O0SEAY0QC', 8799329806, 8382645615, 'Marylyn Rusher', 9980130551, 2003-02-18, 2007-02-02, 2910, 063);

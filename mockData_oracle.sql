@@ -5,8 +5,8 @@ insert into Addresses Values ('Lnv8gcebfmAsvSH', '495 Pleasant Street', 'Reno', 
 insert into Addresses Values ('9R9aYW6qxQnV6rz', '120 5th Street East', 'Oak Forest', 60452);
 
 --Branch Generation
-insert into Branches Values('Q101I4TIWOR1KPR', 'pg9OfjROWwcdLqO', 2297733847);
-insert into Branches Values('YCVQOAPJY7JTO23', 'AfMVWLdQF1mWDTa', 5063861802);
+insert into Branches Values('Q101I4TIWOR1KPR', 'GreenField' 'pg9OfjROWwcdLqO', 2297733847);
+insert into Branches Values('YCVQOAPJY7JTO23', 'Irvine Company', 'AfMVWLdQF1mWDTa', 5063861802);
 
 --Employee Generation
 insert into Employees Values('66WM81J1Q6FM6HZ', 'Mora Grana', 6360057378, TO_DATE('2003-09-17', 'YYYY-MM-DD'), 'manager', 'Q101I4TIWOR1KPR');
@@ -43,12 +43,12 @@ insert into Property_Owners Values('ST3QDSQE115LTPE', 'Lnv8gcebfmAsvSH', 'Ling P
 insert into Property_Owners Values('STO738IPZFURFVZ', '9R9aYW6qxQnV6rz', 'Marylyn Rusher', 3807380290, 744);
 
 --Rental Property Generation
-insert into Rental_Properties Values('DXEUO27JIJFZGAA', 'V0W5CEU4C0UY40O', 'pg9OfjROWwcdLqO', 6, 584, 0, TO_DATE('2007-02-16', 'YYYY-MM-DD'), 'LVMHHMTKRBDPE7T');
-insert into Rental_Properties Values('C23H0964JNW26SV', 'D4BJG0LAOAWH4C8', 'AfMVWLdQF1mWDTa', 0, 180, 1, TO_DATE('2003-03-17', 'YYYY-MM-DD'), 'GHJR0M6Z78VUO7M');
-insert into Rental_Properties Values('FRXRPJKR17NU391', 'HD6KVBZT1L3CJGS', 'TNGXa7ekStP8Drs', 8, 640, 0, TO_DATE('2007-10-19', 'YYYY-MM-DD'), 'NMIL5PN5S2T0CBK');
-insert into Rental_Properties Values('R2IQYSYN3HI5GOR', 'ST3QDSQE115LTPE', 'Lnv8gcebfmAsvSH', 9, 071, 1, TO_DATE('2006-12-08', 'YYYY-MM-DD'), '5NOKG0X4PQ0Y2B1');
-insert into Rental_Properties Values('F9SQG4FF81JA1U1', 'STO738IPZFURFVZ', '9R9aYW6qxQnV6rz', 3, 923, 0, TO_DATE('2002-03-02', 'YYYY-MM-DD'), '9T5OFJAN9NCLLPV');
-insert into Rental_Properties Values('GEOMKPBUJTT5MLF', 'V0W5CEU4C0UY40O', 'pg9OfjROWwcdLqO', 7, 566, 1, TO_DATE('2005-12-02', 'YYYY-MM-DD'), '7R5WE34XST4L5YA');
+insert into Rental_Properties Values('DXEUO27JIJFZGAA', 'V0W5CEU4C0UY40O', 'pg9OfjROWwcdLqO', 'Q101I4TIWOR1KPR', 6, 584, 0, TO_DATE('2007-02-16', 'YYYY-MM-DD'), 'LVMHHMTKRBDPE7T');
+insert into Rental_Properties Values('C23H0964JNW26SV', 'D4BJG0LAOAWH4C8', 'AfMVWLdQF1mWDTa', 'Q101I4TIWOR1KPR', 0, 180, 1, TO_DATE('2003-03-17', 'YYYY-MM-DD'), 'GHJR0M6Z78VUO7M');
+insert into Rental_Properties Values('FRXRPJKR17NU391', 'HD6KVBZT1L3CJGS', 'TNGXa7ekStP8Drs', 'Q101I4TIWOR1KPR', 8, 640, 0, TO_DATE('2007-10-19', 'YYYY-MM-DD'), 'NMIL5PN5S2T0CBK');
+insert into Rental_Properties Values('R2IQYSYN3HI5GOR', 'ST3QDSQE115LTPE', 'Lnv8gcebfmAsvSH', 'YCVQOAPJY7JTO23', 9, 071, 1, TO_DATE('2006-12-08', 'YYYY-MM-DD'), '5NOKG0X4PQ0Y2B1');
+insert into Rental_Properties Values('F9SQG4FF81JA1U1', 'STO738IPZFURFVZ', '9R9aYW6qxQnV6rz', 'YCVQOAPJY7JTO23', 3, 923, 0, TO_DATE('2002-03-02', 'YYYY-MM-DD'), '9T5OFJAN9NCLLPV');
+insert into Rental_Properties Values('GEOMKPBUJTT5MLF', 'V0W5CEU4C0UY40O', 'pg9OfjROWwcdLqO', 'YCVQOAPJY7JTO23', 7, 566, 1, TO_DATE('2005-12-02', 'YYYY-MM-DD'), '7R5WE34XST4L5YA');
 
 --Lease Agreement Generation
 insert into LeaseAgreement Values('N77N3NWC0KBT304', 'DXEUO27JIJFZGAA', 5056704480, 6026421395, 'Hedwig Rapier', 6867305357, TO_DATE('2004-08-07', 'YYYY-MM-DD'), TO_DATE('2009-09-01', 'YYYY-MM-DD'), 0625, 482);
