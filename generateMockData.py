@@ -14,7 +14,8 @@ def number_generator(size=2, chars=string.digits):
 
 def date_generator():
     # iso_format = "{Year}-{Month}-{Day}T{Hour}:{Minute}+{Offset}"
-    iso_format = "TO_DATE('{Year}-{Month}-{Day}', 'YYYY-MM-DD')"
+    # iso_format = "TO_DATE('{Year}-{Month}-{Day}', 'YYYY-MM-DD')"
+    iso_format = "{Year}-{Month}-{Day}"
 
     year_range = [str(i) for i in range(2001, 2015)]
     month_range = ["01","02","03","04","05","06","07","08","09","10","11","12"]
