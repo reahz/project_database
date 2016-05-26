@@ -7,8 +7,8 @@ DROP TABLE Addresses;
 
 CREATE TABLE Addresses(
 	id 			CHAR(15) NOT NULL PRIMARY KEY,
-	street		VARCHAR(15) NOT NULL,
-	city 		VARCHAR(15) NOT NULL,
+	street		VARCHAR(30) NOT NULL,
+	city 		VARCHAR(30) NOT NULL,
 	zip 		NUMBER(5) NOT NULL
 );
 
@@ -21,18 +21,18 @@ CREATE TABLE Branches (
 
 CREATE TABLE Employees (
 	id 			CHAR(15) NOT NULL PRIMARY KEY,
-	branchId	CHAR(15),
-	name		VARCHAR(15) NOT NULL,
+	name		VARCHAR(30) NOT NULL,
 	phone		NUMBER(10),
 	startDate	DATE NOT NULL,
 	job			VARCHAR(15) NOT NULL,
+	branchId	CHAR(15),
 	FOREIGN KEY (branchId) REFERENCES Branches(id)
 );
 
 CREATE TABLE Property_Owners (
 	id 			CHAR(15) NOT NULL PRIMARY KEY,
 	addressId	CHAR(15),
-	name		VARCHAR(15),
+	name		VARCHAR(30),
 	phone		NUMBER(10),
 	fees		NUMERIC(5,2),
 	FOREIGN KEY (addressId) REFERENCES Addresses(id)
@@ -57,11 +57,11 @@ CREATE TABLE LeaseAgreement (
 	propertyId 	 CHAR(15) ,
 	homePhone	 NUMBER(10),
 	workPhone	 NUMBER(10),
-	contactName	 VARCHAR(15),
+	contactName	 VARCHAR(30),
 	contactPhone NUMBER(10),
 	startDate	 DATE,
 	endDate		 DATE,
 	totalRent	 NUMERIC(8, 2),
-	deposit		 NUMERIC(4, 2),
+	deposit		 NUMERIC(8, 2),
 	FOREIGN KEY (propertyId) REFERENCES Rental_Properties(propertyId)
 );
