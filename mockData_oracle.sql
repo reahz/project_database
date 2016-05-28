@@ -5,7 +5,7 @@ insert into Addresses Values ('Lnv8gcebfmAsvSH', '495 Pleasant Street', 'Reno', 
 insert into Addresses Values ('9R9aYW6qxQnV6rz', '120 5th Street East', 'Oak Forest', 60452);
 
 --Branch Generation
-insert into Branches Values('Q101I4TIWOR1KPR', 'GreenField' 'pg9OfjROWwcdLqO', 2297733847);
+insert into Branches Values('Q101I4TIWOR1KPR', 'GreenField', 'pg9OfjROWwcdLqO', 2297733847);
 insert into Branches Values('YCVQOAPJY7JTO23', 'Irvine Company', 'AfMVWLdQF1mWDTa', 5063861802);
 
 --Employee Generation
