@@ -1,0 +1,2 @@
+--Query 10
+select LeaseAgreement.contactName, Addresses.street, Addresses.city, Addresses.zip as from LeaseAgreement, Addresses, Rental_Properties where (sysdate - endDate) < 60 and LeaseAgreement.propertyId = Rental_Properties.propertyId and Rental_Properties.addressId = Addresses.id;

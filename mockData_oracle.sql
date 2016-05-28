@@ -1,5 +1,5 @@
 insert into Addresses Values ('pg9OfjROWwcdLqO', '500 El Camino Real', 'Santa Clara', 95053);
-insert into Addresses Values ('AfMVWLdQF1mWDTa', '826 Willow Drive', 'Beverly', 01915);
+insert into Addresses Values ('AfMVWLdQF1mWDTa', '826 Willow Drive', 'Santa Clara', 01915);
 insert into Addresses Values ('TNGXa7ekStP8Drs', '632 Ridge Avenue', 'Altamonte Springs', 32714);
 insert into Addresses Values ('Lnv8gcebfmAsvSH', '495 Pleasant Street', 'Reno', 89523);
 insert into Addresses Values ('9R9aYW6qxQnV6rz', '120 5th Street East', 'Oak Forest', 60452);
@@ -53,3 +53,5 @@ insert into Rental_Properties Values('GEOMKPBUJTT5MLF', 'V0W5CEU4C0UY40O', 'pg9O
 --Lease Agreement Generation
 insert into LeaseAgreement Values('N77N3NWC0KBT304', 'DXEUO27JIJFZGAA', 5056704480, 6026421395, 'Hedwig Rapier', 6867305357, TO_DATE('2004-08-07', 'YYYY-MM-DD'), TO_DATE('2009-09-01', 'YYYY-MM-DD'), 0625, 482);
 insert into LeaseAgreement Values('4KUNZY5XOBMTYZJ', 'C23H0964JNW26SV', 5171207518, 8049543495, 'Marya Stpierre', 9702581343, TO_DATE('2003-07-08', 'YYYY-MM-DD'), TO_DATE('2005-11-03', 'YYYY-MM-DD'), 7536, 591);
+insert into LeaseAgreement Values('3KNNZY5XOBMTYZH', 'R2IQYSYN3HI5GOR', 8082229885, 8083714311, 'George Smith', 8086431111, TO_DATE('2003-10-08', 'YYYY-MM-DD'), TO_DATE('2004-12-03', 'YYYY-MM-DD'), 10000, 600);
+
