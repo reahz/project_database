@@ -3,12 +3,13 @@ CREATE or REPLACE PROCEDURE getBranchProperties
 AS
 	CURSOR v_cur IS(
 		select
+			Branches.id,
 			Branches.name,
 			count(*) as count
 		from
 			Branches
 			left join Rental_Properties on Rental_Properties.branchId = Branches.id
-		group by id
+		group by Branches.id, Branches.name
 	);
 	v_ref v_cur%rowType;
 BEGIN

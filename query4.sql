@@ -2,8 +2,8 @@ set serveroutput on;
 CREATE or REPLACE PROCEDURE getPropertiesByCriteria(
 	cityParam IN Addresses.city%type,
 	numRoomsParam IN Rental_Properties.numRooms%type,
-	rentHighParam IN Rental_Properties.rent%type,
-	rentLowParam IN Rental_Properties.rent%type
+	rentLowParam IN Rental_Properties.rent%type,
+	rentHighParam IN Rental_Properties.rent%type
 	)
 AS
 	CURSOR v_cur IS(
@@ -21,9 +21,10 @@ AS
 			Addresses.city = cityParam
 			AND Rental_Properties.numRooms = numRoomsParam
 			AND Rental_Properties.availability = 1
-			AND Rental_Properties.rent >= rentLowParam
-			AND Rental_Properties.rent <= rentHighParam
+			AND Rental_Properties.rent > rentLowParam
+			AND Rental_Properties.rent < rentHighParam
 	);
+
 	v_ref v_cur%rowType;
 BEGIN
 	OPEN v_cur;
@@ -38,4 +39,4 @@ BEGIN
 END;
 /
 show errors;
-exec getPropertiesByCriteria('Reno', '3', 200, 500);
+exec getPropertiesByCriteria('Santa Clara', 2, 0, 500);
