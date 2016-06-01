@@ -70,8 +70,6 @@ BEGIN
 		raise_application_error (-20001, 'Minimum lease is 6 months');
 	ELSIF :new.endDate - :new.startDate > 365 THEN
 		raise_application_error(-20002, 'Maximum lease is for 1 year');
-	ELSEIF :new.endDate - :new.startDate = 183 THEN
-		:new.rent = :new.rent*1.1;
 	END IF;
 END lease_term_constraint;
 /
