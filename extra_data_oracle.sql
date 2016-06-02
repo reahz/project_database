@@ -14,3 +14,11 @@ insert into Employees Values('2CAQ8I5U41ED21Q', 'Tyrone Ortiz', 4089542249, TO_D
 --test constraint min 6 month max 1 year
 insert into LeaseAgreement Values('N77N3NWC0KBT304', 'DXEUO27JIJFZGAA', 5056704480, 6026421395, 'Hedwig Rapier', 6867305357, TO_DATE('2016-01-01', 'YYYY-MM-DD'), TO_DATE('2016-05-01', 'YYYY-MM-DD'), 0625, 482);
 insert into LeaseAgreement Values('4KUNZY5XOBMTYZJ', 'C23H0964JNW26SV', 5171207518, 8049543495, 'Marya Stpierre', 9702581343, TO_DATE('2016-01-01', 'YYYY-MM-DD'), TO_DATE('2017-02-01', 'YYYY-MM-DD'), 7536, 591);
+
+
+select * from Employees;
+select * from branches;
+select * from addresses;
+select * from Rental_Properties;
+select * from LeaseAgreement;
+select * from property_owners;
