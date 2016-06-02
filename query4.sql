@@ -39,4 +39,4 @@ BEGIN
 END;
 /
 show errors;
-exec getPropertiesByCriteria('Santa Clara', 2, 0, 500);
+exec getPropertiesByCriteria('Oak Forest', 3, 500, 1000);
